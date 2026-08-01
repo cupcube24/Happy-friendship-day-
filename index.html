@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Friendship Day</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Page 1 -->
+    <section id="page1" class="page active">
+      <div class="card">
+        <div class="gift-wrap">
+          <div class="gift" id="gift">
+            <div class="lid" id="lid">
+              <div class="bow"></div>
+            </div>
+            <div class="box">
+              <div class="ribbon-vertical"></div>
+              <div class="ribbon-horizontal"></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn primary" id="openGiftBtn">Open Gift 🎁</button>
+      </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section id="page2" class="page">
+      <div class="card">
+        <div class="typewriter" id="typewriter"></div>
+        <h1 class="celebrate" id="page2-heading" aria-hidden="true">🎉 HAPPY FRIENDSHIP DAY 🎉</h1>
+        <button class="btn primary" id="surpriseBtn">🎁 Surprise For You</button>
+      </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section id="page3" class="page">
+      <div class="card">
+        <h2 class="subtle">A little memory...</h2>
+        <button class="btn ghost" id="openPhotoBtn">Open Photo</button>
+      </div>
+    </section>
+
+    <!-- Page 4 -->
+    <section id="page4" class="page">
+      <div class="card ending" id="endingCard">
+        <h1>❤️ HAPPY FRIENDSHIP DAY ❤️</h1>
+        <p>
+          Thank you for being such an amazing friend.
+          I'm really grateful for all the memories we've made together.
+          Here's to making many more.
+          Happy Friendship Day!
+        </p>
+        <p class="made-with">Made with ❤️ just for you.</p>
+      </div>
+
+      <canvas id="confetti-canvas"></canvas>
+    </section>
+  </main>
+
+  <!-- Modal for photo (Page 3) -->
+  <div class="modal" id="photoModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-content">
+        <img src="images/us.jpg" alt="Our photo" id="modalImage">
+        <div class="modal-text">
+          <p><strong>Remember this?</strong></p>
+          <p>Well, I want to do a remake of it. What do you think? ❤️</p>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="lastBtn">The Last →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+  </html>
+  
